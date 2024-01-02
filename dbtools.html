@@ -38,6 +38,28 @@
     .database-tools-table thead tr {
       background-color: transparent; /* Or any color you want for the header */
     }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px; 
+      font-size: 18px; 
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for box-shadow */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    }
+    .btn:hover, .btn:focus { /* Focus state added */
+      background-color: #0056b3;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    }
+    .btn:focus {
+      outline: none; /* Removes the default focus outline */
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
+    }
   </style>
 </head>
 
@@ -363,6 +385,14 @@
             </tbody>
           </table>
         </div>
+
+        <!-- Download Link Section -->
+        <div class="download-section" style="text-align: center; margin-top: 20px;">
+          <a href="./Additional-dbtools.pdf" download="Full_Tools_List_From_COMBIGS.pdf" class="btn">
+            Download the Full Tools List (PDF)
+          </a>
+        </div>
+
       </div>
       <div class="clear"></div>
     </main>
